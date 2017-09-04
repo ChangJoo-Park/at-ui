@@ -1,10 +1,10 @@
-# Icon
+# 아이콘
 
 ----
 
-For semantic vector graphics, `AT-UI` use the open source [Feather](https://feathericons.com/) as the ICON library, and make `Icon Font`. `Feather` use `24x24` sizes, with rounded corners, consistent stroke widths.
+시맨틱 벡터 그래픽을 위해 `AT-UI`는 오픈소스 아이콘 라이브러리인 [Feather](https://feathericons.com/)를 사용합니다. 그리고 `Icon Font`로 만들었습니다. `Feather`는 `24x24` 크기를 사용하고 둥근 모서리와 일정한 획의 폭을 사용합니다.
 
-## How To Use
+## 사용 방법
 
 Use `class="icon"` to declare the icon and set the proper classname.
 
@@ -17,37 +17,37 @@ Use `class="icon"` to declare the icon and set the proper classname.
 ```
 :::
 
-## List of Icons
+## 아이콘 목록
 
-### Main
+### 메인
 
 <icon-list type="core"></icon-list>
 
-### Media Control
+### 미디어 컨트롤
 
 <icon-list type="media"></icon-list>
 
-### Communication
+### 커뮤니케이션
 
 <icon-list type="communication"></icon-list>
 
-### Photo
+### 사진
 
 <icon-list type="photo"></icon-list>
 
-### Location
+### 위치
 
 <icon-list type="location"></icon-list>
 
-### Weather
+### 날씨
 
 <icon-list type="weather"></icon-list>
 
-### Arrows
+### 화살표
 
 <icon-list type="arrows"></icon-list>
 
-### LOGO
+### 로고
 
 <icon-list type="logos"></icon-list>
 
