@@ -5,9 +5,9 @@
 
 Textarea Input for multiline text, not for rich text entry.
 
-## Basic
+## 기본 사용법
 
-The textarea is fixed as two lines default, similear to the `AtInput` component.
+textarea 두줄이 기본 값입니다. `AtInput` 컴포넌트와 유사합니다.
 
 :::demo
 ```html
@@ -15,9 +15,9 @@ The textarea is fixed as two lines default, similear to the `AtInput` component.
 ```
 :::
 
-## Disabled
+## 미사용
 
-To make textarea as disabled, add `disabled` property to the Textarea.
+textarea를 미사용상태로 만드려면 `disabled` 속성을 추가하세요
 
 :::demo
 ```html
@@ -25,9 +25,9 @@ To make textarea as disabled, add `disabled` property to the Textarea.
 ```
 :::
 
-## Adaptive Text Height (Limited)
+## 문자열에 따라 변경하는 높이 (제한적)
 
-Automatically adjusted the height of textarea according to the number of lines. The minimum and maximum number of rows can be set by `minRows` and `maxRows` properties.
+문자열의 행에 따라 영역의 높이를 자동으로 조정합니다. 최소 및 최대 행은 `minRows`와 `maxRows`로 설정할 수 있습니다.
 
 :::demo
 ```html
@@ -36,9 +36,9 @@ Automatically adjusted the height of textarea according to the number of lines. 
 ```
 :::
 
-## Adaptive Text Height (Without Limited)
+## 문자열에 따라 변경하는 높이 (무제한)
 
-Automatically adjusted the height of textarea according to the number of lines without limited. Use `autosize` property.
+제한 없이 자동으로 텍스트 영역의 높이를 조정하려면 `autosize` 속성을 사용하세요.
 
 :::demo
 ```html
@@ -46,16 +46,16 @@ Automatically adjusted the height of textarea according to the number of lines w
 ```
 :::
 
-## Textarea Props
+## Textarea 속성
 
-| Property      | Description          | Type      | Accepted Values                           | Default  |
+| 속성      | 설명          | 타입      | 사용 가능한 값                           | 기본값  |
 |---------- |-------------- |---------- |--------------------------------  |-------- |
-| name | same as native textarea | String | - | - |
-| value | the value of textarea, use `v-model` to enable a two-way binding | String | - | - |
-| autosize | adaptive text height | Boolean | - | false |
-| placeholder | the text of placeholder | String | - | - |
-| disabled | whether the textarea is disabled | Boolean | - | false |
-| autofocus | same as native textarea | Boolean | - | false |
+| name | 네이티브 name과 같음 | String | - | - |
+| value | textarea의 값. v-model로 양방향 바인딩을 사용 | String | - | - |
+| autosize | 문자열에 따라 높이 조절 | Boolean | - | false |
+| placeholder | 플레이스홀더 | String | - | - |
+| disabled | textarea의 미사용 여부 | Boolean | - | false |
+| autofocus | 네이티브 autofocus와 같음 | Boolean | - | false |
 
 <script>
 export default {
