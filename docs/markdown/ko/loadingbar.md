@@ -1,15 +1,15 @@
 
-# LoadingBar
+# 로딩바
 
 ----
 
-Create a loading progress bar globally to display the status of asynchronous requests.
+로딩 진행을 표시하는 진행바를 전역으로 만들어 비동기 요청의 상태를 표시합니다.
 
-Because of reusability, `LoadingBar` creates only one instance globally. You can use the `this.$Loading` instance directly.
+재사용성을 위해 `LoadingBar`는 하나의 인스턴스만 만듭니다. `this.$Loading` 인스턴스를 직접 사용합니다.
 
-## Basic
+## 기본 형태
 
-Invoke `$Loading` by thress methods: `start()`、`finish()`、`error()`
+`$Loading`으로 다음 메소드를 호출하세요: `start()`、`finish()`、`error()`
 
 :::demo
 ```html
@@ -39,18 +39,18 @@ Invoke `$Loading` by thress methods: `start()`、`finish()`、`error()`
 ```
 :::
 
-## LoadingBar Methods
+## 로딩바 메소드
 
-| Function Name      | Description          | Parameter      |
+| 함수 이름      | 설명          | 파라미터      |
 |---------- |-------------- |---------- |
-| start | start loading the progress from 0, and load automatically | - |
-| finish | complete progress | - |
-| error | display the error type of progress bar | - |
-| update | specify and update the percentage of progress | percentage |
+| start | 로딩을 0부터 시작. 자동으로 불러옴 | - |
+| finish | 진행 완료 | - |
+| error | 로딩바의 에러 타입 | - |
+| update | 구체적인 진행률 | percentage |
 
-## LoadingBar Configs
+## 로딩바 설정
 
-Provides the global configuration of `LoadingBar`, usage methods below:
+`LoadingBar`에 전역 설정을 지정할 수 있습니다. 아래의 메소드를 이용합니다.
 
 ```js
 this.$Loading.config({
@@ -64,11 +64,11 @@ this.$Loading.config({
 ```
 :::
 
-## LoadingBar Props
+## 로딩바 속성
 
-| Property      | Description          | Type      | Accepted Values                           | Default  |
+| 속성      | 설명          | 타입      | 사용 가능한 값                           | 기본값  |
 |---------- |-------------- |---------- |--------------------------------  |-------- |
-| width | the width of line | Number | - | 2 |
+| width | 라인의 길이 | Number | - | 2 |
 
 <script>
 export default {
