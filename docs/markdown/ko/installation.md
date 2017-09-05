@@ -1,10 +1,10 @@
-# Installation
+# 설치
 
 ----
 
 ## NPM
 
-Recommended use `npm` to development, enjoy the ecosystem of `node` and the chain tool of `webpack`, which brings convenience of development. With the package modules installed by `NPM`, we can easily refer to it in `import` or `require`.
+개발할 때 `npm`을 사용해 `node` 생태계의 `webpack` 등의 툴을 사용하는 것이 좋습니다. `npm`을 이용해 패키지를 설치하면 `import` 또는 `require`를 이용해 쉽게 참조할 수 있습니다.
 
 ```bash
 npm install at-ui
@@ -14,9 +14,9 @@ npm install at-ui-style
 
 ## CDN
 
-Can use traditional `<script>` and `<link>` tag for global use.
+`<script>`와 `<link>`를 사용하는 기존 방법으로 사용할 수도 있습니다.
 
-Get the latest version of `AT-UI` from [UNPKG](https://unpkg.com/at-ui/).
+ UNPKG](https://unpkg.com/at-ui/)에서 `AT-UI`의 최신 버전을 찾으세요.
 
 ```html
 <!-- import Vue -->
@@ -27,9 +27,9 @@ Get the latest version of `AT-UI` from [UNPKG](https://unpkg.com/at-ui/).
 <script src="//unpkg.com/at-ui/dist/at.min.js"></script>
 ```
 
-#### DEMO：
+#### 데모:
 
-By using the script tag to import resources, we can quickly write a demo page with `AT-UI`. You can copy the following code or view [Online Demo](https://jsbin.com/dezafos/edit?html,output) directly.
+스크립트 태그를 사용해 리소스를 가져오면 `AT-UI`로 데모 페이지를 빠르게 만들 수 있습니다. 아래 코드를 복사하거나 [온라인 데모](https://jsbin.com/dezafos/edit?html,output)를 직접 볼 수 있습니다.
 
 ```html
 <!DOCTYPE html>
