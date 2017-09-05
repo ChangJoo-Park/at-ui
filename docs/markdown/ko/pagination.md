@@ -1,13 +1,13 @@
 
-# Pagination
+# 페이지 매김
 
 ----
 
-A long list can be divided into several pages by Pagination, and only one page will be loaded at a time.
+긴 리스트는 페이지 매김으로 여러 페이지로 나눌 수 있으며 한번에 한 페이지만 불러옵니다.
 
-## Basic
+## 기본 형태
 
-Less than 8 pages.
+8페이지 미만.
 
 :::demo
 ```html
@@ -15,9 +15,9 @@ Less than 8 pages.
 ```
 :::
 
-## More Pages
+## 더 많은 페이지
 
-More than 8 pages.
+8 페이지 이상.
 
 :::demo
 ```html
@@ -25,9 +25,9 @@ More than 8 pages.
 ```
 :::
 
-## Show Total Number
+## 전체 갯수 출력
 
-To display the amount of data, add `show-total` property to the Pagination.
+데이터의 양을 표시하려면 `show-total` 속성을 추가하세요
 
 :::demo
 ```html
@@ -37,7 +37,7 @@ To display the amount of data, add `show-total` property to the Pagination.
 
 ## Quick Jumper
 
-To display the quick-jump button, add `show-quickjump` property to the Pagination.
+quick-jump 버튼을 보려주기 위해 `show-quickjump` 속성을 추가하세요
 
 :::demo
 ```html
@@ -45,9 +45,9 @@ To display the quick-jump button, add `show-quickjump` property to the Paginatio
 ```
 :::
 
-## Items in Each Page
+## 각 페이지의 항목 갯수 설정
 
-You can set items amount shown in each page.
+각 페이지에 표시될 항목 수를 설정할 수 있습니다.
 
 :::demo
 ```html
@@ -55,9 +55,9 @@ You can set items amount shown in each page.
 ```
 :::
 
-## Full Feature
+## 전체 기능 사용
 
-Full Feature Pagination.
+페이지 매김의 전체 기능을 사용합니다.
 
 :::demo
 ```html
@@ -65,9 +65,9 @@ Full Feature Pagination.
 ```
 :::
 
-## Mini Pagination
+## 미니 페이지 매김
 
-To use mini size pagination, set `size` property to `small`.
+작은 크기의 페이지매김을 사용하려면 `size` 속성을 `small`로 설정하세요.
 
 :::demo
 ```html
@@ -75,9 +75,9 @@ To use mini size pagination, set `size` property to `small`.
 ```
 :::
 
-## Simple Mode
+## 심플 모드
 
-Set `simple` property to use a simple pagination.
+`simple` 속성을 설정하면 심플 모드로 출력됩니다.
 
 :::demo
 ```html
@@ -86,9 +86,9 @@ Set `simple` property to use a simple pagination.
 ```
 :::
 
-## Pagination Props
+## 페이지매김 속성
 
-| Property      | Description          | Type      | Accepted Values                           | Default  |
+| 속성      | 설명          | 타입      | 사용 가능한 값                           | 기본값  |
 |---------- |-------------- |---------- |-----------------------------  |-------- |
 | current | current page number | Number | - | 1 |
 | total | total number of data | Number | - | 0 |
@@ -102,10 +102,10 @@ Set `simple` property to use a simple pagination.
 
 ## Pagination Events
 
-| Event Name      | Description          | Return Value  |
+| 이벤트 이름      | 설명          | 반환값  |
 |---------- |-------------- |---------- |
-| page-change | Emitted when the page was changed | page number |
-| pagesize-change | Emitted when the page sizer was changed | page size |
+| page-change | 페이지 변경시 발생 | page number |
+| pagesize-change | 페이지 크기가 변경되면 발생 | page size |
 
 <style lang="scss" scoped>
   .at-pagination + .at-pagination {
