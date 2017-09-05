@@ -1,11 +1,11 @@
 
-# Checkbox
+# 체크박스
 
 ----
 
-## Basic
+## 기본형태
 
-Need to bind `model` separately for standalone use.
+독립적인 사용을 위해 `model`을 별도로 바인딩 해야합니다.
 
 :::demo
 ```html
@@ -15,9 +15,9 @@ Need to bind `model` separately for standalone use.
 ```
 :::
 
-## Disabled
+## 미사용
 
-To make a checkbox as disabled, add `disabled` property to the `Checkbox`.
+체크박스를 미사용 상태로 만드려면 `disabled` 속성을 `Checkbox`에 추가하세요.
 
 :::demo
 ```html
@@ -26,9 +26,9 @@ To make a checkbox as disabled, add `disabled` property to the `Checkbox`.
 ```
 :::
 
-## Checkbox Group
+## 체크박스 그룹
 
-Use `CheckboxGroup` combined with array to generate a combination.
+배열을 사용하는 `CheckboxGroup`을 사용해 조합을 만드세요.
 
 :::demo
 ```html
@@ -43,23 +43,23 @@ Use `CheckboxGroup` combined with array to generate a combination.
 ```
 :::
 
-## Check All
+## 전체 선택
 
-The `indeterminate` property can help you to achieve a 'check all' effect.
+`indeterminate` 속성은 '전체 선택'을 할 수 있도록 도와줍니다.
 
 ## Checkbox Props
 
-| Property      | Description          | Type      | Accepted values                           | Default  |
+| 속성      | 설명          | 타입      | 사용 가능 값                           | 기본 값  |
 |---------- |-------------- |---------- |--------------------------------  |-------- |
-| label | value of selection | String | - | - |
-| disabled | disable selection or not | Boolean | - | false |
-| checked | whether the checkbox is selected | Boolean | - | false |
+| label | 선택 값 | String | - | - |
+| disabled | 미사용 여부 | Boolean | - | false |
+| checked | 체크박스가 선택된 여부 | Boolean | - | false |
 
-## Checkbox Group Events
+## 체크박스 그룹 이벤트
 
-| Event Name      | Description          | Return Value  |
+| 이벤트 이름      | 설명          | 반환 값  |
 |---------- |-------------- |---------- |
-| checkbox-group-change | Emitted when the state of selection is changed | the `lavel` value of selected button |
+| checkbox-group-change | 선택된 값이 변경되면 발생합니다. | 선택된 `label`의 값 |
 
 <script>
 export default {
