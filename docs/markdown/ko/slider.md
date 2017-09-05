@@ -1,13 +1,13 @@
 
-# Slider
+# 슬라이더
 
 ----
 
-Slider is used to control the value within specified numerical range.
+슬라이더는 지정된 숫자 범위 안에서 값을 제어할 때 사용합니다.
 
-## Basic
+## 기본
 
-Basic slider, use `v-model` to binding value, the range is `0~100` default.
+기본 슬라이더에 `v-model` 값을 바인딩하여 사용합니다. 범위는 `0~100`이 기본입니다.
 
 :::demo
 ```html
@@ -15,9 +15,9 @@ Basic slider, use `v-model` to binding value, the range is `0~100` default.
 ```
 :::
 
-## Disabled
+## 미사용
 
-To make a slider as disabled, add `disabled` property to the Slider.
+슬라이더를 사용하지 않게 설정하려면 `disabled` 속성을 슬라이더에 추가하세요
 
 :::demo
 ```html
@@ -25,9 +25,9 @@ To make a slider as disabled, add `disabled` property to the Slider.
 ```
 :::
 
-## Customize Range
+## 사용자 정의 범위
 
-The minimum and maximum values are set by `min` and `max` properties.
+최소, 최대 값은 `min`과 `max` 속성으로 설정합니다.
 
 :::demo
 ```html
@@ -35,9 +35,9 @@ The minimum and maximum values are set by `min` and `max` properties.
 ```
 :::
 
-## Discrete Value
+## 이산 값
 
-Control the interval of slider through the `step` property, the value of interval is `1` by default.
+`step` 속성을 이용해 슬라이더의 간격을 조정할 수 있습니다. 값의 간격은 `1`이 기본값입니다.
 
 :::demo
 ```html
@@ -45,21 +45,21 @@ Control the interval of slider through the `step` property, the value of interva
 ```
 :::
 
-## Slider Props
+## 슬라이더 속성
 
-| Property      | Description          | Type      | Accepted Values                           | Default  |
+| 속성      | 설명          | 타입      | 사용가능한 값                           | 기본값  |
 |---------- |-------------- |---------- |--------------------------------  |-------- |
-| value | the value of slider, use `v-model` to enable a two-way binding | Number | - | - |
-| step | the granularity that slider can step through values | Number | - | 1 |
-| min | minimum | Number | - | 0 |
-| max | maximum | Number | - | 100 |
-| disabled | whether slider is disabled | Boolean | - | false |
+| value | slider의 값, `v-model`로 양방향 바인딩합니다. | Number | - | - |
+| step | 슬라이더가 값을 단계별로 처리할 수 있는 정도 | Number | - | 1 |
+| min | 최소값 | Number | - | 0 |
+| max | 최대값 | Number | - | 100 |
+| disabled | 슬라이더 비활성화 여부 | Boolean | - | false |
 
-## Slider Events
+## 슬라이더 이벤트
 
-| Event Name      | Description          | Return Value  |
+| 이벤트      | 설명          | 반환 값  |
 |---------- |-------------- |---------- |
-| change | Emitted when the value of slider changed | value |
+| change | 슬라이더가 변경될 때 발생하는 이벤트 | value |
 
 <script>
 export default {
