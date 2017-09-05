@@ -1,36 +1,36 @@
 
-# Quickstart
+# 퀵스타트
 
 ----
 
-## Before Start
+## 시작하기 전에
 
-> Before using AT-UI, we recommend you to learn `Vue` and `ES2015`, and make sure that you had installed [Node.js](https://nodejs.org/en/) (≥ v6.x) correctly.
+> AT-UI를 사용하기 전에, `Vue`와 `ES2015`를 먼저 익혀야합니다. 그리고 [Node.js](https://nodejs.org/en/) (≥ v6.x)가 올바르게 설치되었는지 확인하세요.
 
-`AT-UI` is based on the `Vue.js` 2.x+ version, so we encourage you to know the basics below:
+`AT-UI`는 `Vue.js` 2버전을 기반으로 합니다. 아래의 기본 사항을 숙지하시기 바랍니다.
 
-- [Vue Components](https://cn.vuejs.org/v2/guide/components.html)
-- [Single File Components](https://cn.vuejs.org/v2/guide/single-file-components.html)
+- [Vue Components](https://kr.vuejs.org/v2/guide/components.html)
+- [Single File Components](https://kr.vuejs.org/v2/guide/single-file-components.html)
 
-## Starter Kit
+## 스타터 킷
 
->  `Vue.js` provides an [official CLI](https://github.com/vuejs/vue-cli) for quickly scaffolding ambitious Single Page Applications. It provides batteries-included build setups for a modern frontend workflow. It takes only a few minutes to get up and running with hot-reload, lint-on-save, and production-ready builds.
+> `Vue.js`는 빠르게 싱글 페이지 앱을 개발하기 위한 [공식 CLI](https://github.com/vuejs/vue-cli)를 제공합니다. 최신 프론트엔드 개발에 필요한 기본적인 설정을 포함하고 있습니다. 적은 시간 안에 핫 리로드, 저장시 린트, 프로덕션 레디 빌드를 사용할 수 있게 됩니다.
 
-We provide a `vue cli template` for you to create SPA (Single Page Application) quickly.
+제공하는 `vue cli template`를 이용해 SPA를 빠르게 만들 수 있습니다.
 
 ```shell
 vue init at-ui/at-template my-project
 ```
 
-If you prefer not to use `vue-cli`, we also provide Starter Kit: [at-webpack-boilerplate](https://github.com/at-ui/at-webpack-boilerplate)
+`vue-cli`를 좋아하지 않으면 스타터킷 [at-webpack-boilerplate](https://github.com/at-ui/at-webpack-boilerplate)를 사용하세요.
 
-## Standard Development Flow
+## 기본적인 개발 흐름
 
-In Production Project, often use `Webpack`, `Rollup` or `Gulp` workflow, most ot them can achieve loading components on demand. So it's not recommended to use `<script>` for global use.
+프로덕션 프로젝트는 `Webpack`, `Rollup` 또는 `Gulp`를 사용합니다. 대부분 요청에 따라 컴포넌트를 불러올 수 있습니다. 전역 사용을 위한 `<script>` 는 권장하지 않습니다.
 
-### Global Components Usage
+### 전역 컴포넌트 사용
 
-Import all components or required components in the entry file of the project.
+프로젝트 엔트리 파일에서 모든 컴포넌트 또는 필수 컴포넌트를 가져옵니다.
 
 ```js
 import Vue from 'vue'
@@ -42,7 +42,7 @@ import 'at-ui-style'    // Import CSS
 Vue.use(AtComponents)
 ```
 
-If you had imported all the components globally, you can use global instance methods of `AT-UI` directly, such as:
+모든 컴포넌트를 전역으로 가져온 경우 다음과 같이 직접 `AT-UI`의 전역 인스턴스 메소드를 사용할 수 있습니다.
 
 ```js
 this.$Loading.start()
@@ -51,9 +51,9 @@ this.$Modal.alert(config)
 this.$Notify(config)
 ```
 
-### Import On Demand
+### 필요한 컴포넌트만 가져오기
 
-The components that can be registered locally are applicable to scenarios that are used to combination with other frameworks.
+로컬로 등록할 수 있는 컴포넌튼는 다른 프레임워크와 결합하는 시나리오에서 사용할 수 있습니다.
 
 ```js
 import { AtInput } from 'at-ui'
@@ -70,7 +70,7 @@ export default {
 }
 ```
 
-In template, use components with custom tag as `<at-input></at-input>`, use `v-model` to achieve data binding.
+템플릿에서, 사용자 정의 태그 `<at-input></at-input>`를 사용하고 `v-model`로 데이터 바인딩을 할 수 있습니다.
 
 ```html
 <template>
@@ -80,6 +80,6 @@ In template, use components with custom tag as `<at-input></at-input>`, use `v-m
 </template>
 ```
 
-## Customize Theme
+## 사용자 정의 테마
 
-The style of `AT-UI` is independent to a separate project [AT-UI-Style](https://github.com/at-ui/at-ui-style), The variables for each component are stored in the file `at-ui-style/src/variables/default.scss`. User can customize the style of components according to actual needs.
+`AT-UI`의 스타일은 별도 프로젝트인 [AT-UI-Style](https://github.com/at-ui/at-ui-style)로부터 독립적입니다. 각 컴포넌트의 변수는 `at-ui-style/src/variables/default.scss`에 있습니다. 필요에 따라 컴포넌트의 스타일을 변경할 수 있습니다.
