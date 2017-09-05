@@ -1,10 +1,10 @@
-# Tag
+# 태그
 
 ----
 
-## Basic Tag
+## 기본 태그
 
-To make a tag get close button, add `closable` property to `Tag`. Trigger `on-close` event when the button clicked.
+태그에 닫을 있는 버튼을 만드려면 `closable` 속성을 `Tag`에 추가하세요. 버튼을 클릭했을 때 `on-close` 이벤트를 트리거합니다.
 
 :::demo
 ```html
@@ -15,9 +15,9 @@ To make a tag get close button, add `closable` property to `Tag`. Trigger `on-cl
 ```
 :::
 
-## With Color Tendency
+## 색과 함께 사용하기
 
-Tag with color tendency gives different types. Set property `color`. It also provide Hex value, such as `color="#6190E8"`.
+색상이 있는 태그를 사용할 수 있습니다. `color`를 설정하세요. `color="#6190E8"`와 같이 16진수 값을 사용할 수 있습니다.
 
 :::demo
 ```html
@@ -31,19 +31,19 @@ Tag with color tendency gives different types. Set property `color`. It also pro
 ```
 :::
 
-## Tag Props
+## 태그 속성
 
-| Property      | Description          | Type      | Accepted values                           | Default  |
+| 속성      | 설명          | 타입      | 사용 가능한 값                           | 기본값  |
 |---------- |-------------- |---------- |--------------------------------  |-------- |
-| name | the name of tag used for close event | Boolean | — | false |
-| color | type | String / Hex | Hex value or `default`, `primary`, `success`, `error`, `warning`, `info` | default |
-| closable | can be closed | Boolean | — | false |
+| name | close 이벤트에 사용 된 태그의 이름 | Boolean | — | false |
+| color | type | String / Hex | Hex value 또는 `default`, `primary`, `success`, `error`, `warning`, `info` | default |
+| closable | 닫기가 가능한지 여부 | Boolean | — | false |
 
-## Tag Events
+## 태그 이벤트
 
-| Event Name      | Description          | Return Value  |
+| Event Name      | 설명          | Return Value  |
 |---------- |-------------- |---------- |
-| on-close | Emitted when closed | event |
+| on-close | 닫힐 때 발생 | event |
 
 <script>
   export default {
