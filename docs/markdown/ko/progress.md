@@ -1,12 +1,12 @@
-# Progress
+# 프로그레스
 
 ----
 
-Used to display the progress and status of events.
+이벤트의 진행 상황 및 상태를 표시하는데 사용합니다.
 
-## Basic
+## 기본형태
 
-Basic progress will set the status to `success` automatically when the progress arrives at `100%`.
+진행 상황이 `100%`에 도달하면 자동으로 `success`로 설정됩니다.
 
 :::demo
 ```html
@@ -17,9 +17,9 @@ Basic progress will set the status to `success` automatically when the progress 
 ```
 :::
 
-## Mini Progress
+## 미니 프로그레스
 
-In the narrow areas, you need to use a mini progress bar. Set the width of progress bar with `stroke-width` property.
+좁은 영역에는 미니 프로그레스를 사용해야합니다. `stroke-width` 속성으로 프로그레스의 폭을 설정하세요.
 
 :::demo
 ```html
@@ -34,9 +34,9 @@ In the narrow areas, you need to use a mini progress bar. Set the width of progr
 ```
 :::
 
-## Dynamic
+## 동적 프로그레스
 
-Click the buttons below to see the transition of progress.
+진행 상황을 보려면 아래 버튼을 클릭하십시오.
 
 :::demo
 ```html
@@ -68,19 +68,19 @@ Click the buttons below to see the transition of progress.
 ```
 :::
 
-## Progress Props
+## 프로그레스 속성
 
-| Property      | Description          | Type      | Accepted Values                           | Default  |
+| 속성      | 설명          | 타입      | 사용가능한 값                           | 기본값  |
 |---------- |-------------- |---------- |--------------------------------  |-------- |
-| percent | the percentage of Progress | Number | - | 0 |
-| status | the status of Progress | String | `success`, `error` | - |
-| stroke-width | the width of Progress Bar | Number | - | 8 |
+| percent | 프로그레스의 진행율 | Number | - | 0 |
+| status | 프로그레스 상태 | String | `success`, `error` | - |
+| stroke-width | 프로그레스 바의 길이 | Number | - | 8 |
 
-## Progress Events
+## 프로그레스 이벤트
 
-| Event Name      | Description          | Return Value  |
+| 이벤트 이름      | 설명          | 반환 값  |
 |------------- |-------------- |---------- |
-| on-status-success | Emitted when the percentage of Progress achieved `100%` | event |
+| on-status-success | 진행률의 진행율이 `100%`가 되면 발생 | event |
 
 <style lang="scss" scoped>
 .at-progress {
